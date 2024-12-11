@@ -52,7 +52,12 @@ The excel sheet came with 1540 rows and 57 columns in total because it also incl
 
 
 ## Bivariate Analysis: ##
-
+<iframe
+  src="Asset/customer_pop.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ## Interesting Aggregate: ##
 
