@@ -1,5 +1,3 @@
-# power-outages-data-analysis
-This is from my DSC 80 final project that I work independently.
 
 https://tachiu33333.github.io/power-outages-data-analysis/
 
@@ -39,31 +37,35 @@ Because of this I'll be using the following columns:
 'POPDEN_RURAL': population density of the state that lives in rural areas
 
 
-Data Cleaning:
+## Data Cleaning: ##
 The excel sheet came with 1540 rows and 57 columns in total because it also included extra row of space, and extra columns for the title, and extra details to share. I started off by removing these extra spaces before moving on and removing several columns until I had the ones above. It's not like they will all make it to the final product, but they were all of use. Next I also filled in customers affected and outage duraiton to fill in the void. I also fixed a few columns like 'NERC.REGION' to make sure there wouldn't be any anomolies for later.
 
 
-Univariate Analysis:
+## Univariate Analysis: ##
+
+
+## Bivariate Analysis: ##
+
+
+## Interesting Aggregate: ##
 
 
 
-
-NMAR Corner:
+## NMAR Corner: ##
 The column 'DEMAND.LOSS.MW' was mentioned on the site that these data are either surveyed and straight froma a company who deals with these data. Because of that, we have to assume that those NaN values were a byproduct of those who didn't apply the information. However, as you'll see later, just like a lot of other column, it very much can be a MAR column because we can infer that the missing data might be able to be impute the missing information but for now, we have to accept the worst case scenario in where 'DEMAND.LOSS.MW' had data that wasn't shared.
 
 
-Missingness Depenedacy:
+## Missingness Depenedacy: ##
 
 
 
 
-Hypothesis Testing
+## Hypothesis Testing: ##
 
 
 
 
-
-Prediction Process:
+## Prediction Process: ##
 We are going to predict how many customers were affected if a disaster striked, based on the disaster itself.
 There are ma
 
@@ -77,3 +79,15 @@ based on the source, the dataset comes from the eia and doe data. Due to that, w
 
 Hypothesis:
 There are more customers affected by outside reasons(severe attack/intentional attack) than internal reasons(system disruption/equipment failure)
+
+
+
+## Baseline Model: ##
+
+
+## Final Model: ##
+
+
+
+
+## Fairness Analysis: ##
