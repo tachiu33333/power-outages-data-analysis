@@ -50,6 +50,7 @@ The excel sheet came with 1540 rows and 57 columns in total because it also incl
   frameborder="0"
 ></iframe>
 
+This one is where I tried to figure out the number of each cause and get a feel for the data. I learn that the top 4 columns are there because the rest are ways to mitigate or fix problems after outages while the first three are actual problems.
 
 ## Bivariate Analysis: ##
 <iframe
@@ -58,6 +59,8 @@ The excel sheet came with 1540 rows and 57 columns in total because it also incl
   height="600"
   frameborder="0"
 ></iframe>
+
+This graph was trying to see between population and Customers that were afffected by the storm. We would learn that population does not actually correlate with customers as I would've hope for, but the graph does look to have three hills signifying that the data might have had sweet points of customers affected and the right amount of people in a state.
 
 ## Interesting Aggregate: ##
 
@@ -71,28 +74,24 @@ The column 'DEMAND.LOSS.MW' was mentioned on the site that these data are either
 
 
 
-
 ## Hypothesis Testing: ##
 
+All this data about power outages are great for companies who are looking for better security against these unforseeen moements. Hence the idea is to then determine whether a company should invest in better security for themselves or against others and nature. The idea of this segment, is to understand the value of each CAUSE.CATEGORY and how mcuh value they actually have. Hence, outside issues are elements in CAUSE.CATEGORY that are 'severe weather' and 'intentional'. Inside issues are problem that include 'system operability disruption' and 'equipment failures'.
 
+
+The following values below are stats after creating a permutation test 
+* null: the difference between inside and outside issues are the same
+* alternative hypotheses: the difference between inside and outsdie issues are significantly different.
+* test statistic(difference in means): -19195.0049
+* significance level: 0.05
+* p-value: 0.3336
+
+    # Conclusion: #
+The p-value is much larger than the significance level, meaning we align with the null hypothesis than the alternative hypothesis in this case. Inside and outside issues have not as much difference between each other as I would've hope but this just means that moving forward, we can use CAUSE.CATEGORY without bias.
 
 
 ## Prediction Process: ##
 We are going to predict how many customers were affected if a disaster striked, based on the disaster itself.
-There are ma
-
-
-
-Goal:
-determine where you live and where you are placed, cant the cause category between severe attack and intentional attack and system disruption and equipment failure can affect the number of customers affected.
-
-MIssingness analysis:
-based on the source, the dataset comes from the eia and doe data. Due to that, we can infer that the United State grabs their data from public and private sectors including surveys or private tours. We can then figure out that data that can only be accomplished by internals or external. means can only be avoided by nmar. The ones I feel strongly align with these reasons are...
-
-Hypothesis:
-There are more customers affected by outside reasons(severe attack/intentional attack) than internal reasons(system disruption/equipment failure)
-
-
 
 ## Baseline Model: ##
 
