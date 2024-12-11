@@ -12,29 +12,29 @@ Honestly, this can help us understand correlation with causes and how it affects
 
 Because of this I'll be using the following columns:
 
-'YEAR', : Tells the year of the outage
-'MONTH', : Tells the month of the outage
-'U.S._STATE' : Tells the state of the outage
-'NERC.REGION', : Tells the region/entity of United States that it is part of
-'OUTAGE.START.DATE': tells the date of the outage
-'OUTAGE.START.TIME': tells the time of the outage
-'CLIMATE.REGION': Tells the region of United States
-'CLIMATE.CATEGORY': Tells how warm the region was at the time of the outage
-'CAUSE.CATEGORY', : Tells what type of damage was done (Severe Weather, Intentional Attack, System Disruption and Equipment Failure)
-'CAUSE.CATEGORY.DETAIL': Specify into more about what cause the damage
-'OUTAGE.DURATION', : Tells how long the outage took place
-'DEMAND.LOSS.MW': tells how much energy was used in terms of mw during the outage
-'CUSTOMERS.AFFECTED': tells how many customers complained during the outage
-'RES.CUSTOMERS': Number of residential customers
-'COM.CUSTOMERS': Number of commercial customers
-'IND.CUSTOMERS': Number of industrial customers
-'TOTAL.CUSTOMERS': Total number of customers at the time of the outage
-'POPULATION': Complete population of the entire state
-'POPPCT_URBAN': percentage of the state that lives in urban areas
-'POPPCT_UC', : percentage of the state that lives in urban clusters
-'POPDEN_URBAN': population density of the state that lives in urban areas
-'POPDEN_UC',: population density of the state that lives in urban cluster
-'POPDEN_RURAL': population density of the state that lives in rural areas
+* 'YEAR', : Tells the year of the outage
+* 'MONTH', : Tells the month of the outage
+* 'U.S._STATE' : Tells the state of the outage
+* 'NERC.REGION', : Tells the region/entity of United States that it is part of
+* 'OUTAGE.START.DATE': tells the date of the outage
+* 'OUTAGE.START.TIME': tells the time of the outage
+* 'CLIMATE.REGION': Tells the region of United States
+* 'CLIMATE.CATEGORY': Tells how warm the region was at the time of the outage
+* 'CAUSE.CATEGORY', : Tells what type of damage was done (Severe Weather, Intentional Attack, System Disruption and Equipment Failure)
+* 'CAUSE.CATEGORY.DETAIL': Specify into more about what cause the damage
+* 'OUTAGE.DURATION', : Tells how long the outage took place
+* 'DEMAND.LOSS.MW': tells how much energy was used in terms of mw during the outage
+* 'CUSTOMERS.AFFECTED': tells how many customers complained during the outage
+* 'RES.CUSTOMERS': Number of residential customers
+* 'COM.CUSTOMERS': Number of commercial customers
+* 'IND.CUSTOMERS': Number of industrial customers
+* 'TOTAL.CUSTOMERS': Total number of customers at the time of the outage
+* 'POPULATION': Complete population of the entire state
+* 'POPPCT_URBAN': percentage of the state that lives in urban areas
+* 'POPPCT_UC', : percentage of the state that lives in urban clusters
+* 'POPDEN_URBAN': population density of the state that lives in urban areas
+* 'POPDEN_UC',: population density of the state that lives in urban cluster
+* 'POPDEN_RURAL': population density of the state that lives in rural areas
 
 
 ## Data Cleaning: ##
