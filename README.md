@@ -91,10 +91,10 @@ The p-value is much larger than the significance level, meaning we align with th
 
 
 ## Prediction Process: ##
-We are going to predict how many customers were affected if a disaster striked, based on the disaster itself.
+Similarly to what i said in the introduction, we are going to predict how many customers were affected if a disaster striked, based on the disaster itself. I think it is important to recognize how many people will be affected by the compromise of their electricty hence I believe we should see if there is anything that sticks out. The goal is to use a regression model and r-squared to measure its accuracy. I'll also be using mean absolute error and root mean squared error to ensure that my model is nto straying too far from the training and testing data.
 
 ## Baseline Model: ##
-
+For the baseline model, I started really simple. I wanted to make sure it worked but most of all, it function with some pieces at a time. The columns i used for the x values were 'CAUSE.CATEGORY','YEAR', 'U.S._STATE', 'OUTAGE.DURATION', and 'DEMAND.LOSS.MW'. The y-value was 'CUSTOMERS.AFFECTED'. There was one ordinal feature('YEAR'), two nominal('CAUSE.CATEGORY', 'U.S._STATE'), and two quantitiative('OUTAGE.DURATION', 'DEMAND.LOSS.MW'). We did one hot enconding for the nominal feature and ordinal feature, and imputed the rest with means to help standardize the data. From there, we predicted and found that the MAE (Mean Absolute Error) was a whopping 71126.29 while RMSE was 176131.5. The r-squared was also really low, at about 0.215. Already, this was looking pretty bad but compared to when it had less features, I say it had a growing potental.
 
 ## Final Model: ##
 
