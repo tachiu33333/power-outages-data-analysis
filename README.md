@@ -41,12 +41,30 @@ Because of this I'll be using the following columns:
 
 
 Data Cleaning:
-The excel sheet actually had 1540 rows and 57 columns in total because it also included extra row of space, and extra columns for the title, and extra details to share. That means that i had to manually remove certain obvious columns such as the first 5 and the 7th column. The first 5 were all title and what the dataframe entails. The 7th column included smaller detail of each column. I also removed the variable column because it didn't mean anything at all.
-
-From there, I also removed 'POSTAL.CODE' as it was exactly the same as US.State and I felt that state was easier to read. I removed OBS since the index already did its job for it. 'MONTH' and 'YEAR' were removed because start time and date as well as restoration time and data already answer that for me. Furthermore, each post is an event that happened. It would be weird if an outage applied on a saturday night and didn't go on to next morning.
+The excel sheet came with 1540 rows and 57 columns in total because it also included extra row of space, and extra columns for the title, and extra details to share. I started off by removing these extra spaces before moving on and removing several columns until I had the ones above. It's not like they will all make it to the final product, but they were all of use. Next I also filled in customers affected and outage duraiton to fill in the void.
 
 
-Prediction Process step 5:
+Univariate Analysis:
+
+
+
+
+NMAR Corner:
+The column 'DEMAND.LOSS.MW' was mentioned on the site that these data are either surveyed and straight froma a company who deals with these data. Because of that, we have to assume that those NaN values were a byproduct of those who didn't apply the information. However, as you'll see later, just like a lot of other column, it very much can be a MAR column because we can infer that the missing data might be able to be impute the missing information but for now, we have to accept the worst case scenario in where 'DEMAND.LOSS.MW' had data that wasn't shared.
+
+
+Missingness Depenedacy:
+
+
+
+
+Hypothesis Testing
+
+
+
+
+
+Prediction Process:
 We are going to predict how many customers were affected if a disaster striked, based on the disaster itself.
 There are ma
 
