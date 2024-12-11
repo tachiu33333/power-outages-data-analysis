@@ -43,6 +43,13 @@ The excel sheet came with 1540 rows and 57 columns in total because it also incl
 
 ## Univariate Analysis: ##
 
+<iframe
+  src="Asset/frequency-cause.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
 
 ## Bivariate Analysis: ##
 
