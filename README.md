@@ -4,7 +4,7 @@ This is from my DSC 80 final project that I work independently.
 https://tachiu33333.github.io/power-outages-data-analysis/
 
 
-Introduction:
+##Introduction:##
 
 Hello, welcome. On this site, you will find a data analysis on the U.S power outage from January 2000 to July 2016. You can find the dataset yourself at : https://engineering.purdue.edu/LASCI/research-data/outages. I'll be attempting to try my best to focus on a few questions throughout my analysis. The big overall theme is to understand the severity of these damages that the power outages bring. I hope that by the end of this, my model can help predict for companies in the strength of damages and how to reinforce for future damages to come.
 
@@ -41,7 +41,7 @@ Because of this I'll be using the following columns:
 
 
 Data Cleaning:
-The excel sheet came with 1540 rows and 57 columns in total because it also included extra row of space, and extra columns for the title, and extra details to share. I started off by removing these extra spaces before moving on and removing several columns until I had the ones above. It's not like they will all make it to the final product, but they were all of use. Next I also filled in customers affected and outage duraiton to fill in the void.
+The excel sheet came with 1540 rows and 57 columns in total because it also included extra row of space, and extra columns for the title, and extra details to share. I started off by removing these extra spaces before moving on and removing several columns until I had the ones above. It's not like they will all make it to the final product, but they were all of use. Next I also filled in customers affected and outage duraiton to fill in the void. I also fixed a few columns like 'NERC.REGION' to make sure there wouldn't be any anomolies for later.
 
 
 Univariate Analysis:
